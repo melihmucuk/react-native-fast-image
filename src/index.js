@@ -30,6 +30,7 @@ class FastImage extends Component {
             onError,
             onLoadEnd,
             style,
+            imageStyle,
             children,
             fallback,
             ...props
@@ -45,7 +46,7 @@ class FastImage extends Component {
                 >
                     <FastImageView
                         {...props}
-                        style={StyleSheet.absoluteFill}
+                        style={imageStyle}
                         source={resolvedSource}
                         onLoadStart={onLoadStart}
                         onProgress={onProgress}
