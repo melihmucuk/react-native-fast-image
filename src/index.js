@@ -63,7 +63,7 @@ class FastImage extends Component {
             <View style={[style, styles.imageContainer]} ref={this.captureRef}>
                 <FastImageView
                     {...props}
-                    style={StyleSheet.absoluteFill}
+                    style={imageStyle}
                     source={resolvedSource}
                     onFastImageLoadStart={onLoadStart}
                     onFastImageProgress={onProgress}
